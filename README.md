@@ -1,5 +1,20 @@
 # Sha256-Bitcoin-Hash
 
+## Table of Contents
+- [Part 1: Simplified SHA-256 Core](#part-1-simplified-sha-256-core)
+  - [Overview](#overview)
+  - [States](#states)
+  - [State Diagram](#state-diagram)
+  - [Performance](#performance)
+  - [Transcript Output](#transcript-output)
+- [Part 2: Bitcoin Hash (Bitcoin Miner)](#part-2-bitcoin-hashbitcoin-miner)
+  - [Overview](#overview-1)
+  - [States](#states-1)
+  - [State Diagram](#state-diagram-1)
+  - [Performance](#performance-1)
+  - [Transcript Output](#transcript-output-1)
+
+
 ## Part 1: Simplified SHA-256 Core
 ### Overview
 A simplified SHA-256 hardware core that hashes a fixed 20-word (640-bit) message stored in memory and writes the 256-bit digest (8 words) back to memory. A finite-state machine (FSM) sequences memory reads, block setup (including padding), the 64 compression rounds per block, and the final write-back.
